@@ -17,22 +17,26 @@
 <title> About Page </title>
 
 <style>
-div.jumbotron {
-  position: relative;
-  top: 20px;
-  height: 200px;
-  background-color: skyblue;
+*{
+    box-sizing: border-box;
 }
-
-div.schoolparagaph {
-  position: relative;
-  top: 20px;
-  height: 200px;
-  background-color: tomato;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 </style>
-
 </head>
 <body>
   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
@@ -55,31 +59,27 @@ div.schoolparagaph {
 
      </div>
    </nav>
-
-
   <center>
-<h1> About Page </h1>
 
-
-<div class="jumbotron">
-
-    Slim Jim
-    <p>Generally bad at his job</p>
-
+  <div class="page-header">
+  <h1><font size="7">About Us</font><h1>
 </div>
-
-<div class="jumbotron">
-
-    Scary Perry
-    <p>Can't code</p>
-
-</div>
-
-<div class="jumbotron">
-
-    Ben is jamin
-    <p>I'm responsible for this mess</p>
-</div>
+<br>
+<br>
+<div class="row">
+  <div class="column" style="background-color:gray;">
+    <h1>Jim Liang</h1>
+    <p>fill later</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+     <h2>Benji Houng</h2>
+     <p>bio</p>
+   </div>
+   <div class="column" style="background-color:#ccc;">
+     <h2>Perry Yuen</h2>
+     <p>bio</p>
+   </div>
+ </div>
 
 <div class="schoolparagaph">
 
