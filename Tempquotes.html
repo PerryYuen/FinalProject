@@ -20,14 +20,24 @@
 
 
   <style>
-  .gif {
-    position: absolute;
-    left: 95;
-    top: 800;
+  *{
+      box-sizing: border-box;
   }
-  .dont_move{
-    position: absolute;
-
+  .column {
+      float: left;
+      width: 33.3%;
+      padding: 10px;
+      height: 300px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  @media screen and (max-width: 600px) {
+      .column {
+          width: 100%;
+      }
   }
 
 
@@ -60,27 +70,45 @@
     <div class="page-header">
   <p><u><i><font face="cursive" size="7">Quotes for Life</font></i></u></p>
 </div>
-  <img src="https://www.brainyquote.com/photos_tr/en/h/hjacksonbrownjr/629119/hjacksonbrownjr1.jpg"
-    style= "width:900px;height:50%;" >
-
-
-
-  <br><img id="dont_move" src="https://i.pinimg.com/originals/50/0e/4b/500e4b7be6bd9581b9b4469101806ce4.jpg"
-      style= "width:900px;height:50%;" >
-  <br><img id="dont_move" src="https://soloquotes.com/wp-content/uploads/2017/08/best-funny-quotes-be-careful-when-you-follow-the-masses-sometimes-the-m-is-silent-coolfunnyquot.jpg"
-        style= "width:900px;height:50%;" >
-      <br><img id="dont_move" src="http://quotesnhumor.com/wp-content/uploads/2016/07/30-Funny-Quotes-and-Sayings-1-Funny-Quotes.jpg"
-          style= "width:900px;height:50%;" >
-        <br><img id="dont_move" src="http://itsfunny.org/wp-content/uploads/2014/01/Cookie-2014-quote-funny.jpg"
-            style= "width:900px;height:50%;" >
-          </center>
-
-          <div class="gif">
-            <img src="https://media2.giphy.com/media/3oriNZoNvn73MZaFYk/giphy.gif"
-              style= "position:relative;width:80%;height:50%;" >
-
-        </div>
-
-
+</center>
+<div class="row">
+  <div class="column" style="background-color:white;">
+    <center> <h2>Quote 1 </h2>
+      <img src="https://www.brainyquote.com/photos_tr/en/h/hjacksonbrownjr/629119/hjacksonbrownjr1.jpg"
+          style= "width:100px;height:15%;" >
+          <p>This quote is about blah</p>
+   </center>
+  </div>
+  <div class="column" style="background-color:white;">
+    <center> <h2>Quote 2 </h2>
+      <img src="https://i.pinimg.com/originals/50/0e/4b/500e4b7be6bd9581b9b4469101806ce4.jpg"
+          style= "width:100px;height:15%;" >
+          <p>This quote is about blah</p>
+   </center>
+   </div>
+   <div class="column" style="background-color:white;">
+    <center> <h2>Quote 3</h2>
+      <img src="https://soloquotes.com/wp-content/uploads/2017/08/best-funny-quotes-be-careful-when-you-follow-the-masses-sometimes-the-m-is-silent-coolfunnyquot.jpg"
+          style= "width:100px;height:15%;" >
+         <p>This quote is about blah</p>
+       </center>
+   </div>
+ </div>
+ <div class="row">
+   <div class="column" style="background-color:white;">
+     <center> <h2>Quote 4</h2>
+       <img src="http://quotesnhumor.com/wp-content/uploads/2016/07/30-Funny-Quotes-and-Sayings-1-Funny-Quotes.jpg"
+           style= "width:100px;height:15%;" >
+           <p>This quote is about blah</p>
+    </center>
+   </div>
+   <div class="column" style="background-color:white;">
+     <center> <h2>Quote 5</h2>
+       <img src="http://itsfunny.org/wp-content/uploads/2014/01/Cookie-2014-quote-funny.jpg"
+           style= "width:100px;height:15%;" >
+           <p>This quote is about blah</p>
+    </center>
+    </div>
+  </div>
 
 </body>
